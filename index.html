@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" href="styles.css">
+      <title>Jesus Montero Portfolio</title>
+   </head>
+   <body>
+
+        <nav role=navigation class="top-nav">
+            <ul>
+                <a 
+                    href="index.html"
+                    role="button"
+                    aria-pressed="false"
+                    aria-label="Go to Home page."
+                >
+                    <li tabindex=1>Home</li>
+                </a>
+                <a 
+                    href="about.html"
+                    role="button"
+                    aria-pressed="false"
+                    aria-label="Go to About page."
+                >
+                    <li tabindex=2>About</li>
+                </a>
+                
+            </ul>
+        </nav>
+
+        <main>
+            <div id="horizontal-container">
+                <div id="greeting">
+                    <h1> Hello. I'm Jesus. <br> A programmer.</h1> 
+                    <p> I am a developer who strives to continue to expand my knowledge. </p>
+                </div>
+                <div id="block">
+                    <div id="background">
+                        <!-- <img src="./Assets/Head Filled with Code.png"> -->
+                    </div>
+                </div>
+            </div>
+            <h2> Featured Projects</h2>
+            <div id="horizontal-container">
+                <div id="project-block">
+                    <img src="Assets/UberClone.png"> 
+                    <p id="project-title">Uber Clone</p>
+                    <div id="project-link">
+                        <p id="project-desc">
+                            A clone of the popular app Uber built with React Native, complete with a 
+                            functioning Search Page screen with Google Autocomplete and Route Confirmation 
+                            screen with Google Maps integration.
+                        </p>
+                        <a 
+                            href="UberClone.html"
+                            role="button"
+                            aria-pressed="false"
+                            aria-label="Learn more about UberClone Project."
+                            tabindex="3"
+                        > 
+                            <img src="Assets/Arrow.png" alt="UberClone">
+                        </a>
+                    </div>
+                        
+                </div>
+                <div id="project-block">
+                    <img src="Assets/Asteroids.png" alt="Asteroid Game"> 
+                    <p id="project-title">Asteroid Game</p>
+                    <p id="project-desc">
+                        Computer game created with the popular Unity Engine and C# programming language
+                        to construct a controllable player and dynamic enemies.
+                    </p>
+                </div>
+            </div>
+        </main>
+
+   </body>
+</html>
