@@ -1,7 +1,8 @@
-Jesus Montero's Personal Projects Website
+# Jesus Montero's Personal Projects Website
 
 Welcome to my personal website where I showcase the software projects I have worked on. This site serves as a portfolio of my skills in programming, web development, and software engineering. Feel free to explore the various projects and learn more about my work!
-Table of Contents
+
+# Table of Contents
 
     Overview
     Live Website
@@ -11,7 +12,7 @@ Table of Contents
     How to Run Locally
     Contact
 
-Overview
+# Overview
 
 This website is designed to give an overview of my programming projects and the technologies I specialize in. Each project has its own page that includes a description, the tools and technologies used, and a link to the code repository (if available). You can navigate through the site using the menu to learn more about each project.
 Live Website
@@ -21,13 +22,13 @@ Technologies Used
 
 This website is built using the following technologies:
 
-    HTML5 – For structuring the content of the pages.
+    HTML5 – For structuring the content of the html.
     CSS3 – For styling and layout.
     JavaScript – For adding interactivity and dynamic elements.
     [Your Frameworks/Libraries] (e.g., React, Bootstrap) – If you're using any.
-    GitHub Pages – For hosting (or any other hosting platform you're using).
+    GitHub html – For hosting (or any other hosting platform you're using).
 
-Projects
+# Projects
 
 Here is a list of some featured projects on the site:
 
@@ -46,5 +47,4 @@ Here is a list of some featured projects on the site:
         Technologies: List of technologies used.
         GitHub Repository
 
-More projects can be found on the projects page.
 How to Run Locally

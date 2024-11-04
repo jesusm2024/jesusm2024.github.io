@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jesus Montero's Portfolio">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/p.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/js/p.js" defer></script> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <title>Jesus Montero Portfolio: Project C </title>
+</head>
+<body>
+
+    <div class="circle-container">
+        <div class="pulse-circle"></div>
+        <div class="pulse-circle"></div>
+        <div class="pulse-circle"></div>
+        <div class="pulse-circle"></div>
+        <div class="pulse-circle"></div>
+    </div>
+
+    <nav class="top-nav" aria-label="Main navigation" >
+        <ul>
+            <li>
+                <a href="/index.html" aria-label="Go to Home page" tabindex="1">Home</a>
+            </li>
+            <li>
+                <a href="/index.html#proj-sect" aria-label="Go to Projects section." tabindex="2">Projects</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h1>Project C</h1>
+
+        <div class="proj-scroll">
+            <a href="/html/projects/p7-b.html" aria-label="Go to Projects section." class="scroll-arrow-block">
+                <i class="fa-solid fa-arrow-left scroll-arrow" ></i>  
+            </a>
+            
+            <div>
+            </div>
+        </div>
+
+        <div>
+            <h2>Overview: </h2>
+            <p class="project-desc">
+                Build an interactive 3D environment that showcases various lighting models and shading techniques using WebGL. Users can explore this environment while dynamically adjusting the position of a light source and observing how different materials respond to lighting effects. The project features side-by-side comparisons of Gouraud and Phong shading techniques, enabling users to see the differences in rendering quality and realism. The interactive interface includes controls for managing lighting properties, material settings, and the overall scene dynamics.
+            </p>
+        </div>
+
+        <div class="horizontal-container">
+            <div>
+                <h2>Technologies: </h2>
+                <ul class="project-desc">
+                    <li>WebGL: Utilized for rendering the 3D scene, creating geometries, and managing lighting calculations. </li>
+                    <li>JavaScript: Handles user interactions, event listeners, and updates to the 3D scene based on user input.</li>
+                    <li>HTML5 Canvas: Serves as the platform for displaying the interactive 3D environment in the browser.</li>
+                    <li>Matrix Transformations (glMatrix.js): Employed for handling transformations and camera movements within the 3D space.</li>
+                    <li>GLSL Shaders: Custom shaders for implementing lighting models, material properties, and shading techniques.</li>
+                </ul>    
+            </div>
+
+            <div>
+                <h2>Features: </h2>
+                <ul class="project-desc">
+                    <li>Interactive Light Source: Users can control the position of the light source in 3D space using sliders for the X, Y, and Z axes, allowing real-time adjustments and immediate visual feedback.</li>
+                    <li>Shading Techniques: The project implements two shading techniques:</li>
+                    <ul>
+                        <li>Gouraud Shading: Calculates vertex colors and interpolates them across polygons.</li>
+                        <li>Phong Shading: Computes lighting at every pixel for a more detailed and realistic appearance.</li>
+                    </ul>
+                    <li>Material Properties: Users can toggle between different material settings (e.g., matte, shiny) to see how they affect the appearance of objects under different lighting conditions.</li>
+                    <li>Dynamic Scene Updates: The scene updates in real time based on user interactions, showcasing the effects of lighting and material changes immediately.</li>
+                    <li>Side-by-Side Comparison: A dual viewport allows users to compare the results of Gouraud and Phong shading techniques simultaneously.</li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <div class="horizontal-container">
+            <div class="proj-link">
+                <h2>Link: </h2>
+                <a href="https://github.com/jesusm2024/cg_c" target="_blank" rel="noopener noreferrer" class="project-desc">
+                    https://github.com/jesusm2024/cg_c
+                </a>
+                
+            </div>
+    
+            <div class="proj-link">
+                <h2>Demo: </h2>
+            
+                <a href="/assets/files/p7-c/c.html" target="_blank" rel="noopener noreferrer" tabindex="10" class="demo-arrow-container">
+                    <i class="fa-solid fa-arrow-right demo-arrow" alt="Arrow linking to UberClone project"></i>
+                </a>
+            </div>
+            
+        </div>
+        
+        <div class="horizontal-container">
+            <div class="demo-block">
+                <img src="/assets/images/p7/3.png">
+            </div>
+        </div>
+           
+
+        <div class="horizontal-container" id="p6-block">
+            <div>
+                <h2>Role: </h2>
+                <ul class="project-desc">
+                    <li>3D Environment Design: Developed the overall 3D scene, including the creation of various objects and the implementation of lighting models.</li>
+                    <li>Lighting Model Implementation: Implemented both Gouraud and Phong shading techniques, ensuring that they were accurately represented in the rendering process.</li>
+                    <li>Shader Development: Wrote GLSL shaders for lighting calculations, material properties, and shading effects, optimizing for performance and visual quality.</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Challenges: </h2>
+                <ul class="project-desc">
+                    <li>Lighting Calculation Complexity: Implementing accurate lighting calculations for both Gouraud and Phong shading posed a challenge. This was addressed by optimizing the GLSL shaders to ensure that they could efficiently handle the necessary computations without compromising performance.</li>
+                    <li>Material Property Representation: Accurately representing different material properties in the shading calculations was complex. I solved this by establishing a clear mapping between user inputs and the material characteristics, allowing for intuitive adjustments.</li>
+                </ul>
+            </div>
+        </div>
+
+    
+        <div>
+            <h2>Takeaways</h2>
+            <ul class="project-desc" id="takeaways-box">
+                <li>Material Property Representation: Accurately representing different material properties in the shading calculations was complex. I solved this by establishing a clear mapping between user inputs and the material characteristics, allowing for intuitive adjustments.</li>
+                <li>Shader Programming Skills: Enhanced my skills in writing and optimizing GLSL shaders, particularly in the context of real-time applications where performance is critical.</li>
+            </ul> 
+        </div>
+    </main>
+</body>
+</html>

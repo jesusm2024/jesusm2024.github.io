@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jesus Montero's Portfolio">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/p.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/js/p.js" defer></script> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <title>Jesus Montero Portfolio: Project A </title>
+</head>
+<body>
+
+    <div class="circle-container">
+        <div class="pulse-circle"></div>
+        <div class="pulse-circle"></div>
+        <div class="pulse-circle"></div>
+        <div class="pulse-circle"></div>
+        <div class="pulse-circle"></div>
+    </div>
+
+    <nav class="top-nav" aria-label="Main navigation" >
+        <ul>
+            <li>
+                <a href="/index.html" aria-label="Go to Home page" tabindex="1">Home</a>
+            </li>
+            <li>
+                <a href="/index.html#proj-sect" aria-label="Go to Projects section." tabindex="2">Projects</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h1>Project A</h1>
+
+        <div class="proj-scroll">
+            <div>
+            </div>
+
+            <a href="/html/projects/p7-b.html" aria-label="Go to Projects section." class="scroll-arrow-block">
+                <i class="fa-solid fa-arrow-right scroll-arrow"></i>
+            </a>
+        </div>
+
+        <div>
+            <h2>Overview: </h2>
+            <p class="project-desc">
+                Create dynamic and interactive 3D toy models using WebGL. The goal was to design and implement two distinct jointed assemblies: a bike and a helicopter, each with animated parts and user-interactive controls. The focus was on building complex 3D parts, connecting them with sequential joints, and providing smooth animations and interactivity for the user. The project captures the essence of classic toys in a digital environment, giving users a nostalgic, playful experience with modern WebGL technologies.
+            </p>
+        </div>
+
+        <div class="horizontal-container">
+            <div>
+                <h2>Technologies: </h2>
+                <ul class="project-desc">
+                    <li>WebGL: Used to render the 3D models and animations in the browser. </li>
+                    <li>JavaScript: For managing the logic behind the jointed assemblies, transformations, and user interactions.</li>
+                    <li>HTML5 Canvas: To create the space where the WebGL scenes and interactive elements are displayed.</li>
+                    <li>Matrix Transformations (cuon-matrix-quat.js or glMatrix.js): Libraries were used to handle 3D transformations for the parts and assemblies.</li>
+                    <li>Shader Programming: Vertex and fragment shaders were written for managing per-vertex colors and lighting effects.</li>
+                </ul>    
+            </div>
+
+            <div>
+                <h2>Features: </h2>
+                <ul class="project-desc">
+                    <li>Two Distinct 3D Assemblies: The bike and helicopter are two independently moving, jointed 3D assemblies.</li>
+                    <ul>
+                        <li>The bike features two sequential joints (handlebars and seat post).</li>
+                        <li>The helicopter includes rotors and blades that move based on user input.</li>
+                    </ul>
+                    <li>Interactive Controls:</li>
+                    <ul>
+                        <li>Users can rotate the helicopter by clicking and dragging.</li>
+                        <li>The helicopter blades can be rotated with the left and right arrow keys, and the rotors with the up and down arrow keys.</li>
+                        <li>Smooth animations for both assemblies, ensuring no jerky transitions between movements.</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+
+        <div class="horizontal-container">
+            <div class="proj-link">
+                <h2>Link: </h2>
+                <a href="https://github.com/jesusm2024/cg_a" target="_blank" rel="noopener noreferrer" class="project-desc">
+                    https://github.com/jesusm2024/cg_a
+                </a>
+                
+            </div>
+    
+            <div class="proj-link">
+                <h2>Demo: </h2>
+                <a href="/assets/files/p7-a/a.html" target="_blank" rel="noopener noreferrer" tabindex="10" class="demo-arrow-container">
+                    <i class="fa-solid fa-arrow-right demo-arrow" alt="Arrow linking to UberClone project"></i>
+                </a>
+            </div>
+            
+        </div>
+        
+        <div class="horizontal-container">
+            <div class="demo-block">
+                <img src="/assets/images/p7/1.png">
+            </div>
+        </div>
+           
+
+        <div class="horizontal-container" id="p6-block">
+            <div>
+                <h2>Role: </h2>
+                <ul class="project-desc">
+                    <li>Designing the Parts: Created custom 3D parts for both the bike and the helicopter, ensuring they met the complexity requirements (12+ vertices) and enclosed a 3D volume.</li>
+                    <li>Matrix Transformations: Utilized matrix transformations to control the positioning, scaling, and rotations of the parts, ensuring proper animation and alignment of hinged joints.</li>
+                    <li>Interactivity and Animation: Implemented event handlers to allow user interaction with the helicopter's controls and managed the smooth, automated animations for the bike.</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Challenges: </h2>
+                <ul class="project-desc">
+                    <li>Challenge: Managing Sequential Joints</li>
+                    <ul>
+                        <li>Solution: The most complex part was handling sequential joints, especially for the bike where the seat and handlebars needed to rotate independently yet still be connected. This was solved by using a hierarchical transformation matrix stack, ensuring that each part could move independently without affecting the rest of the assembly.</li>
+                    </ul>
+                    <li>Challenge: Implementing Smooth User Interaction</li>
+                    <ul>
+                        <li>Solution: Event handlers were used for mouse and keyboard inputs, but ensuring smooth control of the helicopter's rotation required careful handling of input rates and the smoothness of the rotation. JavaScript’s requestAnimationFrame was used to guarantee fluid transitions.</li>
+                    </ul>
+                    <li>Challenge: Ensuring Consistent Frame Rates for Smooth Animation</li>
+                    <ul>
+                        <li>Solution: Optimized the WebGL code to handle all rendering within the GPU, reducing the number of calls made per frame and improving performance by storing vertices in Vertex Buffer Objects (VBOs), allowing them to be transferred to the GPU only once.</li>
+                    </ul>
+
+                </ul>
+            </div>
+        </div>
+
+    
+        <div>
+            <h2>Takeaways</h2>
+            <ul class="project-desc" id="takeaways-box">
+                <li>Understanding of WebGL’s Matrix Stack: Gained a deep understanding of how to use WebGL’s matrix stack to manage hierarchical transformations in a jointed assembly. The project emphasized the importance of correctly pushing and popping matrices when dealing with complex 3D models with multiple joints.</li>
+                <li>Interactive Animation Techniques: This project honed skills in creating user-interactive animations with WebGL, especially focusing on how to link real-time inputs (mouse/keyboard) to visual changes in 3D space</li>
+                <li>User Experience Design: Emphasized the importance of clear instructions and intuitive controls to ensure that users can easily interact with 3D models, an essential takeaway for future interactive WebGL projects.</li>
+            </ul> 
+        </div>  
+    </main>
+</body>
+</html>

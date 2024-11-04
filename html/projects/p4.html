@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jesus Montero's Portfolio">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/p.css">
+    <script src="/js/p.js" defer></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <title>Jesus Montero Portfolio: Formula</title>
+</head>
+<body>
+
+    <div class="circle-container">
+        <div class="pulse-circle"></div>
+        <div class="pulse-circle"></div>
+        <div class="pulse-circle"></div>
+        <div class="pulse-circle"></div>
+        <div class="pulse-circle"></div>
+    </div>
+
+    <nav class="top-nav" aria-label="Main navigation" >
+        <ul>
+            <li>
+                <a href="/index.html" aria-label="Go to Home page" tabindex="1">Home</a>
+            </li>
+            <li>
+                <a href="/index.html#proj-sect" aria-label="Go to Projects section." tabindex="2">Projects</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h1>Formula</h1>
+
+        <div class="proj-scroll">
+            <a href="/html/projects/p3.html" aria-label="Go to Projects section." class="scroll-arrow-block">
+                <i class="fa-solid fa-arrow-left scroll-arrow" ></i>  
+            </a>
+        
+    
+            <a href="/html/projects/p5.html" aria-label="Go to Projects section." class="scroll-arrow-block">
+                <i class="fa-solid fa-arrow-right scroll-arrow"></i>
+            </a>    
+        </div>
+
+        <div>
+            <h2>Overview: </h2>
+            <p class="project-desc">
+                Developed software for monitoring and analyzing various aspects of a vehicle’s performance through a series of interconnected sensor boards under the Data Acquisition System (DAQ) subgroup. The DAQ system normalized and transmitted sensor data via the Controller Area Network (CAN) bus, allowing other systems to track vehicle conditions like temperature, wheel speed, and brake pressure. The project included modular boards for each key system and a logger board for data storage and analysis. The primary goal was to gather reliable sensor data for real-time performance monitoring and analysis.
+            </p>
+        </div>
+
+        <div class="horizontal-container">
+            <div>
+                <h2>Technologies: </h2>
+                <ul class="project-desc">
+                    <li>Languages: C++ </li>
+                    <li>Hardware: ESP32 microcontroller, sensor boards (temperature, wheel speed, brake pressure, etc.)</li>
+                    <li>PlatformIO</li>
+                    <li>TSMaster</li>
+                </ul>    
+            </div>
+
+            <div>
+                <h2>Features: </h2>
+                <ul class="project-desc">
+                    <li>Modular System: The DAQ system consisted of multiple daughter boards (e.g., wheel speed, brake pressure, temperature) designed for specific functions. Each board measured and transmitted data to CAN</li>
+                    <li>Each board collected sensor data, applied dimensionalization algorithms, and sent the processed data onto the High Priority (HP) or Low Priority (LP) CAN bus.</li>
+                    <li>Data Logging: The Logger Board read data from the CAN bus and stored it on an SD card for later analysis.</li>
+                    <li>Flexible Design: The system was designed for scalability, with over 10 daughter boards, allowing for simpler electrical harness manufacturing and reliable data readings.</li>
+                    <li>Advanced Sensor Interpretation: Non-linear sensor data was processed using interpolation techniques such as quadratic or cubic spline fits.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="proj-link">
+            <h2>Link:</h2>
+            <a href="https://github.com/jesusm2024/formula" target="_blank" rel="noopener noreferrer" class="project-desc">
+                https://github.com/jesusm2024/formula
+            </a>
+        </div>
+
+        <div class="horizontal-container">
+            <div class="demo-block">
+                <img src="/assets/images/p4/1.jpg">
+            </div>
+        </div>
+
+        <div class="horizontal-container">
+            <div class="demo-block">
+                <img src="/assets/images/p4/2.png">
+                <p>Hardware</p>
+            </div>
+            <div class="demo-block">
+                <img src="/assets/images/p4/3.png">
+                <p>CAN Abstraction Flowchart</p>
+            </div>
+        </div>
+
+        <div class="horizontal-container">
+            <div class="demo-block">
+                <img src="/assets/images/p4/4.jpg" id="car-img">
+            </div>
+        </div>
+
+        <div class="horizontal-container">
+            <div>
+                <h2>Role: </h2>
+                <ul class="project-desc">
+                    <li>Developed software for multiple sensor boards, including those for wheel speed, brake pressure, and temperature. This involved writing dimensionalization algorithms, configuring sensors, and handling CAN bus data transmission.</li>
+                    <li> Worked closely with the hardware team to understand how the physical boards and sensors operated. This collaboration helped ensure that the software was aligned with hardware functionality and that all components worked seamlessly together.</li>
+                    <li>The CAN library to manage data transmission between the sensor boards and the CAN bus, guaranteeing that the system functioned correctly across different modules.</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Challenges: </h2>
+                <ul class="project-desc">
+                    <li>Learning the CAN Library: One major challenge was learning how to use the CAN library effectively for transmitting and receiving data across various boards. To overcome this, I spent time understanding the protocol and performing tests to ensure data integrity and compatibility across the system.</li>
+                    <li>Understanding Sensor Boards: To ensure accurate data collection, I had to thoroughly test and understand each sensor’s behavior, from wheel speed to brake pressure. This required careful experimentation, building custom test rigs, and iterating on the dimensionalization algorithms.</li>
+                    <li>Hardware Coordination: Coordination with the hardware team was critical to ensure that the software could operate with the physical sensor boards. I had regular check-ins with the hardware team to discuss prototype availability and clarify expected sensor behaviors.</li>
+                    <li>Documentation and Code Structure: Given the complexity of the system and the cross-team collaboration, maintaining clean code and thorough documentation was essential. This ensured other team members could easily follow the logic and modify the system as needed.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <h2>Takeaways</h2>
+            <ul class="project-desc" id="takeaways-box">
+                <li>Cross-Team Communication: Effective communication between hardware and software teams was essential for ensuring project success. I learned how important it is to synchronize efforts between both sides and manage expectations effectively.</li>
+                <li>CAN Bus Proficiency: This project allowed me to become proficient in working with the CAN protocol, which is crucial for real-time data transmission in vehicle systems.</li>
+                <li>Modular Design Thinking: Designing modular, scalable systems enabled more straightforward troubleshooting and future enhancements. The modular structure also simplified electrical harness manufacturing and improved reliability.</li>
+                <li>Code Quality and Maintainability: Ensuring that code is easy to understand and well-documented became a critical skill during this project, especially as the system complexity increased with multiple daughter boards.</li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>

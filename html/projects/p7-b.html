@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jesus Montero's Portfolio">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/p.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/js/p.js" defer></script> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <title>Jesus Montero Portfolio: Project B </title>
+</head>
+<body>
+
+    <div class="circle-container">
+        <div class="pulse-circle"></div>
+        <div class="pulse-circle"></div>
+        <div class="pulse-circle"></div>
+        <div class="pulse-circle"></div>
+        <div class="pulse-circle"></div>
+    </div>
+
+    <nav class="top-nav" aria-label="Main navigation" >
+        <ul>
+            <li>
+                <a href="/index.html" aria-label="Go to Home page" tabindex="1">Home</a>
+            </li>
+            <li>
+                <a href="/index.html#proj-sect" aria-label="Go to Projects section." tabindex="2">Projects</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h1>Project B</h1>
+
+        <div class="proj-scroll">
+            <a href="/html/projects/p7-a.html" aria-label="Go to Projects section." class="scroll-arrow-block">
+                <i class="fa-solid fa-arrow-left scroll-arrow" ></i>  
+            </a>
+
+            <a href="/html/projects/p7-c.html" aria-label="Go to Projects section." class="scroll-arrow-block">
+                <i class="fa-solid fa-arrow-right scroll-arrow"></i>
+            </a>
+        </div>
+
+        <div>
+            <h2>Overview: </h2>
+            <p class="project-desc">
+                The project focuses on creating a large, interactive 3D world that users can explore using a movable 3D camera. The user can control the camera's position and orientation to navigate the world, which includes multiple jointed assemblies. The canvas displays two side-by-side views—one using a perspective projection and the other using an orthographic projection—highlighting the differences between these two views. The scene includes a grid-like ground plane and animated, sequentially-jointed 3D parts. The project also introduces interactive elements such as sliders and checkboxes for controlling joint angles and objects via keyboard and mouse inputs.
+            </p>
+        </div>
+
+        <div class="horizontal-container">
+            <div>
+                <h2>Technologies: </h2>
+                <ul class="project-desc">
+                    <li>WebGL: Used for rendering the 3D scene, creating objects, and managing projections. </li>
+                    <li>JavaScript: For handling user input, event listeners, camera controls, and scene updates.</li>
+                    <li>HTML5 Canvas: For displaying the interactive 3D world in the browser.</li>
+                    <li>Matrix Transformations (glMatrix.js): Utilized for managing object transformations and camera movements.</li>
+                    <li>Shader Programming: Custom shaders for handling the lighting, projections, and vertex transformations in the scene.</li>
+                </ul>    
+            </div>
+
+            <div>
+                <h2>Features: </h2>
+                <ul class="project-desc">
+                    <li>Interactive Camera: Users can move the camera in all directions using WASD keys to strafe and the arrow keys to pan, creating intuitive navigation.</li>
+                    <li>Dual Viewports: The canvas is split into two views:</li>
+                    <ul>
+                        <li>Perspective View: Shows the 3D world using a perspective projection.</li>
+                        <li>Orthographic View: Displays the same 3D world but with an orthographic projection, allowing users to compare the two views side by side.</li>
+                    </ul>
+                    <li>Ground Plane: A large, grid-like ground plane extends across the 3D space, helping users orient themselves as they move the camera.</li>
+                    <li>Jointed Assemblies: Includes multiple animated assemblies with at least four sequential joints, which can be controlled using sliders and checkboxes.</li>
+                    <li>Mouse Interaction: Users can click and drag within the canvas to rotate a stationary object, mimicking trackball-like control over its orientation.</li>
+                    <li>Manual Joint Control: Sliders and checkboxes allow users to manually control the joint angles of the 3D assemblies.</li>
+                
+                </ul>
+            </div>
+        </div>
+
+        <div class="horizontal-container">
+            <div class="proj-link">
+                <h2>Link: </h2>
+                <a href="https://github.com/jesusm2024/cg_b" target="_blank" rel="noopener noreferrer" class="project-desc">
+                    https://github.com/jesusm2024/cg_b
+                </a>
+                
+            </div>
+    
+            <div class="proj-link">
+                <h2>Demo: </h2>
+                <a href="/assets/files/p7-b/b.html" target="_blank" rel="noopener noreferrer" tabindex="10" class="demo-arrow-container">
+                    <i class="fa-solid fa-arrow-right demo-arrow" alt="Arrow linking to UberClone project"></i> 
+                </a>
+            </div>
+            
+        </div>
+        
+        <div class="horizontal-container">
+            <div class="demo-block">
+                <img src="/assets/images/p7/2.png">
+            </div>
+        </div>
+           
+
+        <div class="horizontal-container" id="p6-block">
+            <div>
+                <h2>Role: </h2>
+                <ul class="project-desc">
+                    <li>3D World Creation: Designed and built the 3D world, including the ground plane and several animated jointed assemblies.</li>
+                    <li>Camera System Development: Implemented an interactive camera system that allowed users to explore the scene using keyboard and mouse inputs. Ensured that the camera movement was intuitive, allowing for both aiming and movement in the world.</li>
+                    <li>Projection Handling: Set up the dual viewports with one using a perspective projection and the other an orthographic projection. Developed the logic to ensure both views showed the scene consistently.</li>
+                    <li>Event Handling: Integrated controls for moving the camera, adjusting joint angles, and interacting with the scene through mouse and keyboard inputs.</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Challenges: </h2>
+                <ul class="project-desc">
+                    <li>Dual Viewports: Ensuring that both the perspective and orthographic views rendered correctly with the same camera parameters was challenging. I solved this by carefully adjusting the near and far clipping planes and ensuring the correct projection matrices were applied to each view.</li>
+                    <li>Camera Movement: Creating a camera that could both aim in any direction and move through the 3D space without changing its orientation was challenging. This was addressed by separating the camera’s aiming controls from its movement, allowing for independent control of direction and position.</li>
+                    <li>User Interaction: Implementing smooth controls for rotating objects via mouse input, and adjusting joint angles with sliders, required careful integration of event listeners. Solving this involved using WebGL's matrix stack for smooth transitions and responsive object manipulation.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <h2>Takeaways</h2>
+            <ul class="project-desc" id="takeaways-box">
+                <li>Perspective vs. Orthographic Understanding: Gained a deeper understanding of how perspective and orthographic projections influence 3D rendering and user perception of space. This project emphasized the practical differences between these views and how to implement them efficiently in WebGL.</li>
+                <li>Camera and Navigation Techniques: Improved my ability to design intuitive camera controls that allow for free movement and aiming in 3D space. Understanding how to decouple movement from aiming direction made the camera system far more flexible.</li>
+                <li>User Interaction Design: Learned how to integrate user controls such as mouse-drag rotations, keyboard navigation, and GUI sliders into a WebGL project. This enhanced the interactivity and user experience of the application.</li>
+                <li>Matrix Transformations: Strengthened my skills in working with transformation matrices, particularly in managing sequential joint rotations and camera positioning within a dynamic 3D scene.</li>
+            </ul> 
+        </div>
+    </main>
+</body>
+</html>

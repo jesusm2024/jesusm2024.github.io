@@ -1,0 +1,50 @@
+/* Reset some default styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #ffffff; /* White text color for contrast */
+    background-color: #000000; /* Black background */
+    display: flex;
+    flex-direction: row; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Align to the top */
+    height: 100vh; /* Full viewport height */
+    margin: auto;
+}
+
+.container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Align items horizontally */
+    justify-content: center; /* Center items horizontally */
+    align-items: flex-start; /* Align items to the top */
+    width: 100%; /* Full width for scrolling */
+}
+
+canvas {
+    border: 2px solid #ffffff; /* White border around the canvas */
+    border-radius: 8px; /* Rounded corners for the canvas */
+    margin-right: 20px; /* Space between canvas and instructions */
+    width: 700px; /* Fixed width for the canvas */
+    height: 700px; /* Fixed height for the canvas */
+}
+
+div {
+    text-align: left; /* Align text to the left within the div */
+    max-width: 600px; /* Limit the width for readability */
+    border: 1px solid #ffffff; /* White border around the text container */
+    border-radius: 8px; /* Rounded corners for the text container */
+    padding: 20px; /* Padding inside the text container */
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+}
+
+p, ul {
+    margin: 10px 0; /* Margin between paragraphs and list items */
+    line-height: 1.6; /* Improve readability */
+}
+
+li {
+    margin-left: 20px; /* Indent list items */
+}
+
+strong {
+    color: #fcd848; /* Gold color for strong text for emphasis */
+}

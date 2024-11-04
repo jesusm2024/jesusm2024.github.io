@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Project A</title>
+    <link rel="stylesheet" href="a.css">
+    <script src="lib/webgl-utils.js" defer></script>
+    <script src="lib/webgl-debug.js" defer></script>
+    <script src="lib/cuon-utils.js" defer></script>
+    <script src="lib/cuon-matrix.js" defer></script>
+    <script src="a.js" defer></script>
+</head>
+
+<body onload="main()">
+
+    <canvas id="webgl" width="500" height="500">
+        Please use a browser that supports "canvas"
+    </canvas>
+
+    <div>
+        <p>
+            <strong>Bike:</strong> The bike is animated automatically and cannot be controlled manually.
+        </p>
+        <p>
+            <strong>Helicopter:</strong> You can interact with the helicopter in the following ways:
+        </p>
+        <ul>
+            <li><strong>Rotate the helicopter</strong>: Click, hold, and drag your cursor within the canvas to rotate the helicopter.</li>
+            <li><strong>Control the blades</strong>: Press &larr; (left arrow) and &rarr; (right arrow) to rotate the blades.</li>
+            <li><strong>Control the rotors</strong>: Press &uarr; (up arrow) and &darr; (down arrow) to rotate the rotors.</li>
+        </ul>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Project B</title>
+    <link rel="stylesheet" href="b.css">
+	<script src="lib/webgl-utils.js" defer></script>
+    <script src="lib/webgl-debug.js" defer></script>
+    <script src="lib/cuon-utils.js" defer></script>
+    <script src="lib/cuon-matrix-quat03.js" defer></script>
+    <script src="../lib/cuon-matrix-quat03.js" defer></script>
+    <script src="b.js" defer></script>
+  </head>
+
+  <body onload="main()">
+
+    <canvas id="webgl" width="600" height="600">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+	<div id="block">
+		<div id="x-block">
+			<div>
+				<h4>Camera Controls: </h4>
+				<p>
+					Use the arrow keys to pan the camera up (&uarr;), down (&darr;), left (&larr;), and right (&rarr;).
+				</p>
+				<p>
+					Use WASD keys to move the camera toward the aim point (W), away from the aim point (S), and to strafe left (A) and strafe right (D).
+	
+				</p>
+	
+			</div>
+			
+			<div>
+				<h4>Mouse: </h4>
+				<p>
+					Click and drag the mouse within the viewports to rotate the stationary object. 
+				</p>
+			</div>
+		</div>
+
+		<div id="joint-block">
+			<!-- Toggle for Animation Mode -->
+			<label>
+				<h4>Control Assembly With Joints </h4>
+				<p> Refresh to return to automatically animating the assembly with joints.</p>
+
+				<input type="checkbox" id="animToggle" value="false"> 
+			</label>
+			<!-- Sliders for Joint Angles -->
+			<div id="manualControls" style="display:none;">
+				<label>Joint 1 Angle: <input type="range" id="joint1Slider" min="-20" max="20"></label>
+				<label>Joint 2 Angle: <input type="range" id="joint2Slider" min="-10" max="10"></label>
+				<label>Joint 3 Angle: <input type="range" id="joint3Slider" min="-7" max="7"></label>
+				<label>Joint 4 Angle: <input type="range" id="joint4Slider" min="-2" max="2"></label>
+				<label>Joint 5 Angle: <input type="range" id="joint5Slider" min="0" max="360"></label>
+			</div>
+		</div>
+		
+
+		
+	</div>
+  </body>
+</html>

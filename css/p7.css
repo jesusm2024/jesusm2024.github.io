@@ -1,0 +1,213 @@
+/* ////////////////////////////////////////////////////////////////////// */
+
+/* Circle container that spans the full screen */
+.circle-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+    overflow: visible;
+}
+
+/* Base styling for each circle */
+.pulse-circle {
+    position: absolute;
+    border: 1px solid white;
+    border-radius: 50%;
+    animation: pulse 8s infinite ease-in-out;
+    opacity: 0.8;
+    will-change: transform, opacity;
+    transition: top 8s ease, left 8s ease; /* Smooth transition for position */
+}
+
+
+/* Different circle sizes */
+.pulse-circle:nth-child(1) { width: 10vw; height: 10vw; }
+.pulse-circle:nth-child(2) { width: 15vw; height: 15vw; }
+.pulse-circle:nth-child(3) { width: 18vw; height: 18vw; }
+.pulse-circle:nth-child(4) { width: 15vw; height: 15vw; }
+.pulse-circle:nth-child(5) { width: 10vw; height: 10vw; }
+
+/* Keyframes for pulsing effect */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(2.5);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.0); /* Slightly enlarge */
+        opacity: 0; /* Fade out */
+    }
+}
+
+
+/* Media query for larger screens (tablets and desktops) */
+@media (min-width: 768px) {
+    .circle-container {
+        top: 0%;
+        left: 50%;
+    }
+
+    .pulse-circle {
+        opacity: 0.3;
+    }
+
+    @keyframes pulse {
+        0%, 100% {
+            transform: scale(1.0);
+            opacity: 0.3;
+        }
+        50% {
+            transform: scale(0.5); /* Slightly enlarge */
+            opacity: 0; /* Fade out */
+        }
+    }
+}
+
+/* ////////////////////////////////////////////////////////////////////// */
+
+.proj-scroll {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90vw;
+}
+
+.scroll-arrow-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(18, 17, 16);
+    padding: 5%;
+    border: 3px solid white;
+    border-radius: 10px;
+    animation: buttonGrowShrink 5s infinite ease-in-out;
+}
+
+.scroll-arrow {
+    font-size: 10vw;
+}
+
+h2 {
+    font-family: "Audiowide", sans-serif;
+    white-space: nowrap;
+    font-size: 8vw; /* Responsive font size */
+    text-align: center; /* Center the text */
+}
+
+/* Media query for larger screens (tablets and desktops) */
+@media (min-width: 768px) {
+    .scroll-arrow-block {
+        padding: 1%;
+        border: 6px solid white;
+    }
+    .scroll-arrow {
+        font-size: 3vw;
+    }
+    h2 {
+        font-size: 3vw;;
+    }
+}
+
+/* ////////////////////////////////////////////////////////////////////// */
+
+
+/* Main container */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2%; /* Padding for spacing */
+    box-sizing: border-box;
+    width: 100vw; /* Full width of the screen */
+    max-width: 100vw; /* Prevent overflow */
+}
+
+/* Grid container */
+#p7-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2%; /* Space between items */
+    width: 100%; /* Full width of the container */
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Individual project block */
+.project-block {
+    margin-top: 2vw; /* Dynamic margin */
+    padding: 3vw; /* Dynamic padding */
+    box-sizing: border-box;
+    background-color: rgb(30, 30, 30);
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    text-align: center;
+    width: 80%;
+}
+
+.project-desc {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5vw; 
+    width: 90%;
+    margin-top: -5vw;
+}
+
+/* Heading inside project blocks */
+#p7-grid h3 {
+    margin-bottom: 10vw; /* Dynamic margin for spacing */
+    font-size: 8vw; /* Responsive font size */
+    text-align: center;
+}
+
+/* Overview block */
+#overview {
+    background-color: rgb(17, 17, 18);
+    padding: 5vw; /* Dynamic padding */
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin-top: 2vw; /* Dynamic margin */
+    width: 100%;
+}
+
+/* Media query for larger screens (tablets and desktops) */
+@media (min-width: 768px) {
+    #p7-grid {
+        flex-direction: row;;
+        gap: 1%; /* Space between items */
+        width: 100vw; /* Full width of the container */
+    }
+
+    .project-block {
+        flex: 1; /* Allow project blocks to grow equally */
+        margin: 1%; /* Space between project blocks */
+        padding: 1vw; /* Adjust padding */
+        max-width: 30%; /* Restrict width for better layout on large screens */
+    }
+
+    .project-desc {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.2vw; 
+
+    }
+
+    #p7-grid h3 {
+        font-size: 3vw; /* Adjust font size */
+        margin-bottom: 7vw;
+    }
+
+    #overview {
+        padding: 3vw; /* Adjust padding for larger screens */
+        margin-top: 1vw; /* Adjust margin for larger screens */
+        width: 80vw; /* Constrain the width on larger screens */
+    }
+}

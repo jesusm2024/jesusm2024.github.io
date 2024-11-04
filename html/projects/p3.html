@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jesus Montero's Portfolio">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/p.css">
+    <script src="/js/p.js" defer></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <title>Jesus Montero Portfolio: PhotoApp</title>
+</head>
+<body>
+
+    <div class="circle-container">
+        <div class="pulse-circle"></div>
+        <div class="pulse-circle"></div>
+        <div class="pulse-circle"></div>
+        <div class="pulse-circle"></div>
+        <div class="pulse-circle"></div>
+    </div>
+
+    <nav class="top-nav" aria-label="Main navigation" >
+        <ul>
+            <li>
+                <a href="/index.html" aria-label="Go to Home page" tabindex="1">Home</a>
+            </li>
+            <li>
+                <a href="/index.html#proj-sect" aria-label="Go to Projects section." tabindex="2">Projects</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h1>PhotoApp</h1>
+
+        <div class="proj-scroll">
+            <a href="/html/projects/p2.html" aria-label="Go to Projects section." class="scroll-arrow-block">
+                <i class="fa-solid fa-arrow-left scroll-arrow" ></i>  
+            </a>
+        
+            <a href="/html/projects/p4.html" aria-label="Go to Projects section." class="scroll-arrow-block">
+                <i class="fa-solid fa-arrow-right scroll-arrow"></i>
+            </a>
+        </div>
+
+        <div>
+            <h2>Overview: </h2>
+            <p class="project-desc">
+                A web service application built using Node.js and the Express framework, designed to act as an intermediary between a Python-based client and AWS services. The service handles requests from the client, manages interactions with S3 for image storage, and RDS (MySQL) for user and image tracking, while enforcing security through IAM policies. The web service optimizes the workflow by decoupling the client from direct AWS interaction, improving scalability and flexibility.
+            </p>
+        </div>
+
+        <div class="horizontal-container">
+            <div>
+                <h2>Technologies: </h2>
+                <ul class="project-desc">
+                    <li>Frontend: Python-based client </li>
+                    <li>Backend: Node.js with Express framework</li>
+                    <li>Database: AWS RDS (MySQL)</li>
+                    <li>Storage: AWS S3 for image storage</li>
+                    <li>Deployment: AWS Elastic Beanstalk and EC2 for web service hosting</li>
+                    <li>Security: AWS IAM for managing access permissions</li>
+                </ul>    
+            </div>
+
+            <div>
+                <h2>Features: </h2>
+                <ul class="project-desc">
+                    <li>Introduced a web service tier between the Python client and AWS services.</li>
+                    <li>Enabled API-based image upload, retrieval, and user management.</li>
+                    <li>Stored images in AWS S3, and managed user and image data using RDS (MySQL).</li>
+                    <li>API endpoints for fetching statistics, user details, assets, and downloading images.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="proj-link">
+            <h2>Link:</h2>
+            <a href="https://github.com/jesusm2024/photoapp" target="_blank" rel="noopener noreferrer" class="project-desc">
+                https://github.com/jesusm2024/photoapp
+            </a>
+        </div>
+
+        <div class="horizontal-container">
+            <div class="demo-block">
+                <img src="/assets/images/p3/1.png">
+            </div>
+        </div>
+
+        <div class="horizontal-container">
+            <div class="demo-block">
+                <img src="/assets/images/p3/2.png">
+                <p>Select function</p>
+            </div>
+            <div class="demo-block">
+                <img src="/assets/images/p3/3.png">
+                <p>Get stats</p>
+            </div>
+            <div class="demo-block">
+                <img src="/assets/images/p3/4.png">
+                <p>List users</p>
+            </div>
+        </div>
+
+        <div class="horizontal-container">
+            <div class="demo-block">
+                <img src="/assets/images/p3/5.png">
+                <p>List assets</p>
+            </div>
+            <div class="demo-block">
+                <img src="/assets/images/p3/6.png">
+                <p>Download and display</p>
+            </div>
+            <div class="demo-block">
+                <img src="/assets/images/p3/7.png">
+                <p>List bucket contents one page at a time</p>
+            </div>
+        </div>
+
+        <div class="horizontal-container">
+            <div>
+                <h2>Role: </h2>
+                <ul class="project-desc">
+                    <li>Developed the Node.js web service to handle client requests and manage AWS services.</li>
+                    <li>Integrated the Python client to communicate with the new web service rather than AWS directly.</li>
+                    <li>Deployed the web service using AWS Elastic Beanstalk, ensuring scalability and accessibility.</li>
+                    <li>Configured security roles using AWS IAM for managing permissions between the web service and AWS services.</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Challenges: </h2>
+                <ul class="project-desc">
+                    <li>To ensure smooth communication between the Python client and web service, I implemented and tested API routes to handle client requests and interact with AWS services.</li>
+                    <li>To handle image uploads and downloads securely and efficiently, I used AWS S3 for storage, incorporating efficient retrieval and encoding mechanisms like Base64 for secure data transfer.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <h2>Takeaways</h2>
+            <ul class="project-desc" id="takeaways-box">
+                <li>Gained experience in building multi-tier, cloud-native applications with AWS services.</li>
+                <li>Learned the importance of API design in separating the client from backend services for better scalability.</li>
+                <li>Understood the benefits of using AWS Elastic Beanstalk for simplifying deployment and management of cloud-based applications.</li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>

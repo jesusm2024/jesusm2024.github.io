@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jesus Montero's Portfolio">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/p.css">
+    <script src="/js/p.js" defer></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <title>Jesus Montero Portfolio: Microprocessor System Design </title>
+</head>
+<body>
+
+    <div class="circle-container">
+        <div class="pulse-circle"></div>
+        <div class="pulse-circle"></div>
+        <div class="pulse-circle"></div>
+        <div class="pulse-circle"></div>
+        <div class="pulse-circle"></div>
+    </div>
+
+    <nav class="top-nav" aria-label="Main navigation" >
+        <ul>
+            <li>
+                <a href="/index.html" aria-label="Go to Home page" tabindex="1">Home</a>
+            </li>
+            <li>
+                <a href="/index.html#proj-sect" aria-label="Go to Projects section." tabindex="2">Projects</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h1>Microprocessor System Design</h1>
+
+        <div class="proj-scroll">
+            <a href="/html/projects/p4.html" aria-label="Go to Projects section." class="scroll-arrow-block">
+                <i class="fa-solid fa-arrow-left scroll-arrow" ></i>  
+            </a>
+        
+            <a href="/html/projects/p6.html" aria-label="Go to Projects section." class="scroll-arrow-block">
+                <i class="fa-solid fa-arrow-right scroll-arrow"></i>
+            </a>
+        </div>
+
+        <div>
+            <h2>Overview: </h2>
+            <p class="project-desc">
+                Designed and developed a multifunctional alarm clock in collaboration with a peer. The clock was created to challenge the user to perform various tasks, such as reaching a target heart rate or solving trivia questions, in order to turn off the alarm. The project required integrating several hardware components, including an LCD screen, joystick, heartbeat sensor, and a Micro:bit microcontroller. The focus was on hardware-software integration, where custom driver code was written to interface with each sensor and component, ensuring seamless functionality. We also managed the budgeting, purchasing of materials, and adhered to a strict timeline for development and presentation.
+            </p>
+        </div>
+
+        <div class="horizontal-container">
+            <div>
+                <h2>Technologies: </h2>
+                <ul class="project-desc">
+                    <li>Languages: C </li>
+                    <li>Microcontroller: Micro
+                        NRF52833</li>
+                    <li>Sensors: Joystick (SparkFun COM-15168), Heart Rate/Pulse Sensor (SparkFun SEN-11574)</li>
+                    <li>Display: Adafruit LCD Screen (Product ID 1770)</li>
+                </ul>    
+            </div>
+
+            <div>
+                <h2>Features: </h2>
+                <ul class="project-desc">
+                    <li>Set Alarm with Joystick: Users could set a timer using the joystick, with confirmation via a click.</li>
+                    <li>Randomized Alarm Challenges:</li>
+                    <ul>
+                        <li>Heart Rate Task: Users had to increase their heart rate by 10% above their baseline within 30 seconds.</li>
+                        <li>Arrow Sequence Memorization: Users had to input a series of arrows correctly using the joystick.</li>
+                        <li>Math Trivia: Users solved a math problem by selecting the correct answer using the joystick.</li>
+                        <li>General Trivia: Similar to math trivia but with general knowledge questions.</li>
+                    </ul>
+                    <li>Failure Handling: If a user failed a challenge, the alarm would reset, requiring them to redo the task.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="proj-link">
+            <h2>Link:</h2>
+            <a href="https://github.com/jesusm2024/alarm" target="_blank" rel="noopener noreferrer" class="project-desc">
+                https://github.com/jesusm2024/alarm
+            </a>
+        </div>
+
+        <div class="horizontal-container">
+            <div class="demo-block">
+                <img src="/assets/images/p5/1.jpeg">
+            </div>
+            <div class="demo-block">
+                <img src="/assets/images/p5/2.jpg">
+            </div>
+        </div>
+
+        <div class="horizontal-container">
+            <div>
+                <h2>Role: </h2>
+                <ul class="project-desc">
+                    <li>Led brainstorming, development, and testing for challenges to shut down alarm.</li>
+                    <li>Coordinated meetings to guarantee we were on track to finished project before the deadline while still satisfying constraints.</li>
+                    <li>Created outline for the code of each sensor by writing the header files and establishing the logic of each sensor as well as the main logic loop.</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Challenges: </h2>
+                <ul class="project-desc">
+                    <li>LCD Screen Integration: The most difficult part of the project was writing the code to initialize the LCD screen and render characters correctly. This required deep understanding of the screen’s documentation and trial-and-error to get the display working.</li>
+                    <li>Pin Configuration: Determining the correct pins on the microcontroller for each sensor and component was tricky due to inconsistent documentation. We solved this through experimentation and by consulting hardware documentation for guidance.</li>
+                    <li>Hardware Connectivity: Connecting multiple sensors to a single breadboard required careful planning to avoid interference between components. We documented our wiring configuration thoroughly to mitigate issues.</li>
+
+                    
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <h2>Takeaways</h2>
+            <ul class="project-desc" id="takeaways-box">
+                <li>Hardware-Software Synergy: This project emphasized the importance of understanding both hardware and software when working on embedded systems, as changes in one could directly affect the other.</li>
+                <li>Problem Solving: I learned to be resourceful when facing incomplete documentation and used hands-on experimentation to resolve issues.</li>
+                <li>Collaboration: Effective communication with my peer was essential in dividing tasks and ensuring smooth project progress, especially under tight deadlines.</li>
+                <li>Project Management: Managing a budget and timeline was crucial, especially in securing the right components on time for testing and integration.</li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>
