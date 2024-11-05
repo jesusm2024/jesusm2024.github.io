@@ -163,7 +163,7 @@ h2 {
     /* Animation for growing and shrinking */
     @keyframes growShrink {
         0%, 100% {
-            transform: scale(1.5); /* Start at initial size */
+            transform: scale(1.2); /* Start at initial size */
         }
         50% {
             transform: scale(1); /* Grow to 2x */
