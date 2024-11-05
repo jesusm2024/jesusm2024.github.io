@@ -144,7 +144,7 @@ h2 {
         transform: scale(1.5); /* Start at initial size */
     }
     50% {
-        transform: scale(1.75); /* Grow to 2x */
+        transform: scale(1.6); /* Grow to 2x */
     }
 }
 
