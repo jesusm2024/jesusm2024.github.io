@@ -15,3 +15,11 @@ function copyEmail() {
     document.body.removeChild(textarea); // Remove the textarea
     alert('Email copied to clipboard!'); // Optional alert for user feedback
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const projectsLink = document.querySelector('a[data-target="#proj-sect"]');
+    projectsLink.addEventListener("click", function (event) {
+        event.preventDefault();
+        document.querySelector("#proj-sect").scrollIntoView({ behavior: "smooth" });
+    });
+});
