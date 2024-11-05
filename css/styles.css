@@ -109,9 +109,11 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: growShrink 15s infinite ease-in-out;
     opacity: 0.7;
     will-change: transform; /* Optimizes transform animation */
+    /* transform: scale(1.5); */
+    animation: growShrink 15s infinite ease-in-out;
+
 }
 
 /* Individual sizes for each circle */
@@ -139,10 +141,10 @@ h2 {
 /* Animation for growing and shrinking */
 @keyframes growShrink {
     0%, 100% {
-        transform: scale(2.5); /* Start at initial size */
+        transform: scale(1.5); /* Start at initial size */
     }
     50% {
-        transform: scale(1.5); /* Grow to 2x */
+        transform: scale(1.75); /* Grow to 2x */
     }
 }
 
@@ -155,7 +157,7 @@ h2 {
     .background-circle {
         border: 4px solid white;
         opacity: 0.6;
-        animation: growShrink 12s infinite ease-in-out
+        animation: growShrink 12s infinite ease-in-out;
     }
 
     /* Animation for growing and shrinking */
@@ -241,6 +243,7 @@ a, a:visited, a:hover, a:active {
     width: 100vw; /* Full viewport width */
     margin-bottom: 0; /* No margin at the bottom */
     box-sizing: border-box; /* Prevents overflow due to padding */
+    z-index: 10;
 }
 
 #profile-block-out {
