@@ -211,3 +211,10 @@ main {
         width: 80vw; /* Constrain the width on larger screens */
     }
 }
+
+/* Disable animation on Firefox */
+@-moz-document url-prefix() {
+    .scroll-arrow-block {
+        animation: none !important;
+    }
+}

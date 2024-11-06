@@ -111,7 +111,6 @@ h2 {
     justify-content: center;
     opacity: 0.7;
     will-change: transform; /* Optimizes transform animation */
-    /* transform: scale(1.5); */
     animation: growShrink 15s infinite ease-in-out;
 
 }
@@ -163,10 +162,10 @@ h2 {
     /* Animation for growing and shrinking */
     @keyframes growShrink {
         0%, 100% {
-            transform: scale(1.2); /* Start at initial size */
+            transform: scale(1.0); /* Start at initial size */
         }
         50% {
-            transform: scale(1); /* Grow to 2x */
+            transform: scale(1.4); /* Grow to 2x */
         }
     }
 }
@@ -626,6 +625,33 @@ a, a:visited, a:hover, a:active {
     .project-desc {
         font-size: 1.5vw; 
     }
+}
 
-   
+/* Disable animation and shrink animated background on Firefox */
+@-moz-document url-prefix() {
+    #res-block {
+        animation: none !important;
+    }
+
+    .icon-container {
+        animation: none !important;
+    }
+
+    #email-block {
+        animation: none !important;
+    }
+
+    .proj-arrow {
+        animation: none !important;
+    }
+
+     /* Animation for growing and shrinking */
+     @keyframes growShrink {
+        0%, 100% {
+            transform: scale(1.1); /* Start at initial size */
+        }
+        50% {
+            transform: scale(1.2); /* Grow to 2x */
+        }
+    }
 }

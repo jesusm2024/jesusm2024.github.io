@@ -301,3 +301,14 @@ p {
         font-size: 3vw; /* Responsive width based on viewport */
     }
 }
+
+/* Disable animation on Firefox */
+@-moz-document url-prefix() {
+    .scroll-arrow-block {
+        animation: none !important;
+    }
+
+    .proj-link a  {
+        animation: none !important;
+    }
+}

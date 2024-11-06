@@ -154,3 +154,10 @@ strong {
         padding-right: 2%;
     }
 }
+
+/* Disable animation on Firefox */
+@-moz-document url-prefix() {
+    #download-block {
+        animation: none !important;
+    }
+}
