@@ -255,6 +255,7 @@ a, a:visited, a:hover, a:active {
     background-color: transparent;
     border: 5px solid white;
     margin-bottom: 10vw;
+    margin-top: 10vw;
     background-color: black;
 }
 
