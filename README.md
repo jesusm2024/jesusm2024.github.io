@@ -9,10 +9,10 @@ Welcome to my personal website, a portfolio where I showcase the software projec
 4. [Projects](#projects)
     - [OnSite](#onsite)
     - [PhotoApp](#photoapp)
-    - [Northwestern Formula Racing](#northwestern-formula-racing)
-    - [Microprocessor System Design](#microprocessor-system-design)
+    - [Scrap Wars](#scrap-wars)
     - [Avatar the Last Airbender Wiki](#avatar-the-last-airbender-wiki)
-    - [Study Buddies](#study-buddies)
+    - [Northwestern Formula Racing](#northwestern-formula-racing)
+    - [Pulse](#microprocessor-system-design)
     - [Computer Graphics](#computer-graphics)
     - [Generative Methods](#generative-methods)
 
@@ -48,26 +48,27 @@ This website is built with:
 - **Technologies**: Node.js, Express, AWS, Python
 - **GitHub Repository**: <a href="https://github.com/jesusm2024/photoapp" target="_blank" rel="noopener noreferrer">PhotoApp Repository</a>
 
-### 3. Northwestern Formula Racing
-- **Description**: Developed software for temperature, brake, logger, and wheel modules within a Data Acquisition (DAQ) System, normalizing sensor data and integrating it with the Controller Area Network (CAN) bus.
-- **Technologies**: C++, Custom CAN Library, ESP32 Microcontroller, Sensors
-- **GitHub Repository**: <a href="https://github.com/jesusm2024/formula" target="_blank" rel="noopener noreferrer">Northwestern Formula Racing Repository</a>
-
-### 4. Microprocessor System Design
-- **Description**: A multifunctional alarm clock coded in C++, featuring an LCD screen, heartbeat sensor, and joystick. Users must complete specific tasks (like reaching a target heart rate) to turn off the alarm.
-- **Technologies**: C, Microcontrollers(), Sensors, Display
-- **GitHub Repository**: <a href="https://github.com/jesusm2024/alarm" target="_blank" rel="noopener noreferrer">Microprocessor System Design Repository</a>
-
-### 5. Avatar the Last Airbender Wiki
+### 3. Scrap Wars
 - **Description**: A comprehensive website to explore the "Avatar the Last Airbender" series, including a book breakdown, comics, and trivia.
 - **Technologies**: HTML, CSS, JavaScript, Anime.js, Last Airbender API , Sample API
 - **GitHub Repository**: <a href="https://github.com/jesusm2024/avatar" target="_blank" rel="noopener noreferrer">Avatar Wiki Repository</a>
 - **Live Site**: <a href="https://jesusm4.github.io/" target="_blank" rel="noopener noreferrer">Avatar Wiki Live Site</a>
 
-### 6. Study Buddies
-- **Description**: A mobile app connecting Northwestern students with study partners based on shared classes, schedules, and preferences.
-- **Technologies**: React, Firebase
-- **GitHub Repository**: <a href="https://github.com/jesusm2024/StudyBuddies" target="_blank" rel="noopener noreferrer">Study Buddies Repository</a>
+### 4. Avatar the Last Airbender Wiki
+- **Description**: A comprehensive website to explore the "Avatar the Last Airbender" series, including a book breakdown, comics, and trivia.
+- **Technologies**: HTML, CSS, JavaScript, Anime.js, Last Airbender API , Sample API
+- **GitHub Repository**: <a href="https://github.com/jesusm2024/avatar" target="_blank" rel="noopener noreferrer">Avatar Wiki Repository</a>
+- **Live Site**: <a href="https://jesusm4.github.io/" target="_blank" rel="noopener noreferrer">Avatar Wiki Live Site</a>
+
+### 5. Northwestern Formula Racing
+- **Description**: Developed software for temperature, brake, logger, and wheel modules within a Data Acquisition (DAQ) System, normalizing sensor data and integrating it with the Controller Area Network (CAN) bus.
+- **Technologies**: C++, Custom CAN Library, ESP32 Microcontroller, Sensors
+- **GitHub Repository**: <a href="https://github.com/jesusm2024/formula" target="_blank" rel="noopener noreferrer">Northwestern Formula Racing Repository</a>
+
+### 6. Pulse
+- **Description**: A multifunctional alarm clock coded in C++, featuring an LCD screen, heartbeat sensor, and joystick. Users must complete specific tasks (like reaching a target heart rate) to turn off the alarm.
+- **Technologies**: C, Microcontrollers(), Sensors, Display
+- **GitHub Repository**: <a href="https://github.com/jesusm2024/alarm" target="_blank" rel="noopener noreferrer">Pulse Repository</a>
 
 ### 7. Computer Graphics
 - **Description**: A series of WebGL-based projects showcasing interactive 3D environments with dynamic animations, jointed assemblies, and advanced graphics techniques. Each project emphasizes user interaction, allowing real-time adjustments to lighting, camera angles, and object manipulation for a hands-on experience in immersive 3D worlds.
